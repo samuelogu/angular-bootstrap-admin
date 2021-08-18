@@ -5,7 +5,18 @@ import {AccountComponent} from "./account.component";
 const routes: Routes = [
   {
     path: '',
-    component: AccountComponent
+    component: AccountComponent,
+    children: [
+      {
+        path: 'dashboard',
+        loadChildren: () => import('../../pages/account/dashboard/dashboard.module').then(m => m.DashboardModule)
+      },
+      {
+        path: '',
+        redirectTo: 'dashboard',
+        pathMatch: 'full'
+      }
+    ]
   }
 ];
 
