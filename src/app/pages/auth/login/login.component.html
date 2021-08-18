@@ -1,0 +1,28 @@
+
+<h1 class="h3 mb-4 mt-3 fw-normal">Account login</h1>
+<form>
+
+  <div class="mb-2">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" name="email" required class="form-control" placeholder="Email address" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-2">
+    <label for="exampleInputPassword1" class="form-label password-label">
+      Password
+      <a routerLink="/auth/forgot-password" class="small">Forgot password</a>
+    </label>
+    <input type="password" name="password" required class="form-control" placeholder="********" id="exampleInputPassword1">
+  </div>
+
+  <div class="checkbox mb-3">
+    <label>
+      <input type="checkbox" value="remember-me"> Remember me
+    </label>
+  </div>
+
+
+  <button class="w-100 btn btn-lg btn-dark mb-3" type="submit">Login</button>
+</form>
+<p>
+  You don't have an account? <a routerLink="/auth/register">Register</a>
+</p>

@@ -1,0 +1,31 @@
+
+<h1 class="h3 mb-4 mt-3 fw-normal">Account registration</h1>
+<form>
+  <div class="mb-2">
+    <label for="name" class="form-label">Name</label>
+    <input type="text" name="name" required class="form-control" placeholder="Name" id="name" aria-describedby="emailHelp">
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="mb-2">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" name="email" required class="form-control" placeholder="Email address" id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="mb-2">
+        <label for="phone" class="form-label">Phone number</label>
+        <input type="email" name="phone" required class="form-control" placeholder="Phone number" id="phone" aria-describedby="emailHelp">
+      </div>
+    </div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label password-label">Password</label>
+    <input type="password" name="password" required class="form-control" placeholder="********" id="exampleInputPassword1">
+  </div>
+
+  <button class="w-100 btn btn-lg btn-dark mb-3" type="submit">Create account</button>
+</form>
+<p>
+  You have an account? <a routerLink="/auth/login">Login</a>
+</p>
